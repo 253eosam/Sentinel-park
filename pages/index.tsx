@@ -1,4 +1,4 @@
-import AppTemplate from "../components/AppTemplate"
+import AppTemplate from "@src/components/AppTemplate"
 
 const index: React.FC<any> = () => {
 
