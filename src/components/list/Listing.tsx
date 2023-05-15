@@ -9,7 +9,7 @@ interface IPost {
   [key: string]: any
 }
 
-const List: React.FC<any> = () => {
+const Listing: React.FC<any> = () => {
   const [checkedArr, setCheckedArr] = useState<number[]>([])
 
   const rows: IPost[] = [
@@ -90,4 +90,4 @@ const List: React.FC<any> = () => {
   )
 }
 
-export default List
+export default Listing

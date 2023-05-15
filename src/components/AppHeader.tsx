@@ -1,14 +1,14 @@
 import { Avatar, Badge, Box, IconButton, Stack, SvgIcon, Tooltip, useMediaQuery } from '@mui/material'
 import React from 'react'
 import { alpha } from '@mui/material/styles'
-import { usePopover } from '../hooks/usePopover';
-import '@fontsource/roboto/700.css';
+import { usePopover } from '../hooks/usePopover'
+import '@fontsource/roboto/700.css'
 
 const TOP_NAV_HEIGHT = 64
 const APP_TITLE = process.env.NEXT_PUBLIC_TITLE
 
 const AppHeader: React.FC<any> = (props) => {
-  const accountPopover = usePopover();
+  const accountPopover = usePopover()
   
   return (
     <>
@@ -21,7 +21,7 @@ const AppHeader: React.FC<any> = (props) => {
           right: 0,
           top: 0,
           zIndex: (theme) => theme.zIndex.appBar,
-          boxShadow: '0 4px 6px -6px #222'
+          boxShadow: '0 4px 6px -6px #222',
         }}
       >
         <Stack
