@@ -1,16 +1,19 @@
 import React from 'react'
 import AppHeader from './AppHeader'
 import AppContainer from './AppContainer'
-import Listing from './list/Listing'
-import TemporarySwipeableDrawer from './drawer/TemporarySwipeableDrawer'
+import AlarmBox from './alarm/AlarmBox'
 
 const AppTemplate: React.FC<any> = () => {
+  const cardNum = 20
   return (
     <>
       <AppHeader></AppHeader>
       <AppContainer>
-        <Listing></Listing>
-        <TemporarySwipeableDrawer></TemporarySwipeableDrawer>
+        {
+          Array.from(Array(cardNum), (_, i) => i).map((item: any) => (
+            <AlarmBox key={`${item}`} item={item} />
+          ))
+        }
       </AppContainer>
     </>
   )
