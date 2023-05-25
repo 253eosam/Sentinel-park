@@ -10,9 +10,9 @@ const AlarmBox: React.FC<any> = ({ item }) => {
 
   return (
     <Box
+      className="bg-secondary text-white"
       sx={{
         borderRadius: '10px',
-        background: '#E7EBF0',
         padding: 5,
         marginY: 5,
       }}

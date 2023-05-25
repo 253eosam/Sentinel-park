@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -49,8 +52,7 @@ table {
 }
 
 a { text-decoration: none; }
-a:link {color: black;}      /* unvisited link */
-a:visited {color: black;}   /* visited link */
-a:hover {color: black;}     /* mouse over link */
-a:active {color: black;}    /* selected link */
-
+a:link {color: inherit;}      /* unvisited link */
+a:visited {color: inherit;}   /* visited link */
+a:hover {color: inherit;}     /* mouse over link */
+a:active {color: inherit;}    /* selected link */

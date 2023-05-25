@@ -6,7 +6,7 @@ import { RecoilRoot } from 'recoil'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <main>
+    <main className='bg-primary py-5'>
     <RecoilRoot>
       <Component  {...pageProps} />
     </RecoilRoot>
