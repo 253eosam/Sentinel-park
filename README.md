@@ -18,6 +18,7 @@
 - State Management : Recoil
 - UI Framework : MUI
 - Support CSS Module : [Tailwindcss](https://tailwindcss.com/docs/guides/nextjs)
+- Depoly: vercel
 
 ## 대표기능
 
