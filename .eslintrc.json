@@ -1,5 +1,10 @@
 {
-  "extends": "next/core-web-vitals",
+  "plugins": [
+  ],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:prettier/recommended"
+  ],
   "rules": {
     "comma-dangle": ["error", "always-multiline"],
     "semi": ["error", "never"]
