@@ -7,13 +7,12 @@ import TicketCountBox from "./TicketCountBox"
 import AlarmDayOfWeek from "./AlarmDayOfWeek"
 
 const AlarmBox: React.FC<any> = ({ item }) => {
-
   return (
     <Box
       className="bg-secondary text-white"
       sx={{
         position: "relative",
-        borderRadius: '10px',
+        borderRadius: "10px",
         padding: 5,
         marginY: 5,
       }}
@@ -23,7 +22,7 @@ const AlarmBox: React.FC<any> = ({ item }) => {
       <AlarmType val={"U"}></AlarmType>
       <AlarmDate stDate="2023.05.18" endDate="2023.06.17"></AlarmDate>
       <TicketCountBox total={10} remain={3}></TicketCountBox>
-      <AlarmDayOfWeek val={["mon","sat"]}></AlarmDayOfWeek>
+      <AlarmDayOfWeek val={["mon", "sat"]}></AlarmDayOfWeek>
       <span>{item}</span>
     </Box>
   )
