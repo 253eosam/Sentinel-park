@@ -6,6 +6,8 @@ const AlarmTitle: React.FC<any> = () => {
     <Typography
       variant="h5"
       component="div"
+      align="center"
+      className="font-serif"
     >
       Title
     </Typography>
