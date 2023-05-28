@@ -8,11 +8,6 @@
     "start": "next start",
     "lint:fix": "next lint --fix"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "echo 'test'"
-    }
-  },
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
