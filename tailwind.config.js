@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors")
 
 const myTheme = {
-  primary: '#FBEAEB',
-  secondary: '#2F3C7E',
-  white: colors.white,
+  ...colors,
+  primary: "#FBEAEB",
+  secondary: "#2F3C7E",
 }
 
 module.exports = {
@@ -13,7 +13,7 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
- 
+
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],

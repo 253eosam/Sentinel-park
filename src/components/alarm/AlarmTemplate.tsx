@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react"
 
 const AlarmTemplate: React.FC<any> = () => {
-
-  return (
-    <>
-    </>
-  )
+  return <></>
 }
 
 export default AlarmTemplate

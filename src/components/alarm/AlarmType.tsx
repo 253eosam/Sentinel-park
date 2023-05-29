@@ -9,17 +9,17 @@ const ALARM_TYPES = {
 const BOX_WIDTH = 90
 const BOX_HEIGHT = 60
 
-const AlarmType: React.FC<{ val?: keyof typeof ALARM_TYPES}> = ({ val }) => {
+const AlarmType: React.FC<{ val?: keyof typeof ALARM_TYPES }> = ({ val }) => {
   return (
     <Box
-      className={`bg-white text-secondary inline-block text-center shadow-2xl font-mono font-bold text-8xl leading-[${BOX_HEIGHT}px]`}
+      className={`inline-block bg-white text-center font-mono text-8xl font-bold text-secondary shadow-2xl leading-[${BOX_HEIGHT}px]`}
       sx={{
         minWidth: BOX_WIDTH,
-        minHeight: BOX_HEIGHT,
+        minHeight: 60,
         borderRadius: 2,
       }}
     >
-      {(val && ALARM_TYPES[val]) ? ALARM_TYPES[val] : 'X'}
+      {val && ALARM_TYPES[val] ? ALARM_TYPES[val] : "X"}
     </Box>
   )
 }
